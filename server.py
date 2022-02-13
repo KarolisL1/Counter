@@ -10,7 +10,6 @@ def index():
     else:
         print("key 'key_name' does NOT exist")
         session['count'] += 1
-    # print(session['count'])
     return render_template("index.html")
 
 

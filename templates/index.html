@@ -9,7 +9,11 @@
 </head>
 <body>
     <h1>Counter : {{ session['count'] }}</h1>
-    <a href="/">counter</a>
-    <a href="/destroy_session">Reset</a>
+    <!-- <a href="/">counter</a>
+    <a href="/destroy_session">Reset</a> -->
+    <form>
+        <input type="button" value="Counter" onclick="location.href = './'">
+        <input type="button" value="Reset" onclick="location.href = './destroy_session'">
+    </form>
 </body>
 </html>
